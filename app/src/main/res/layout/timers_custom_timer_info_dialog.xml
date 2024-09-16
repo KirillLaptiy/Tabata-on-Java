@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/timers_button_closeDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="10dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_delete"
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/timers_button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="10dp"
+            android:layout_gravity="end"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="@string/todo" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/timerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_info"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:layout_gravity="center" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/timerName"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/timerWarmUp"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/warm_up_format" />
+
+        <TextView
+            android:id="@+id/timerWorkInterval"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/work_interval_format" />
+
+        <TextView
+            android:id="@+id/timerRestInterval"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/rest_interval_format" />
+
+        <TextView
+            android:id="@+id/timerCoolDown"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="@string/cool_down_format" />
+
+        <TextView
+            android:id="@+id/timerRounds"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="@string/rounds_format"  />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="template_timers">Template Timers</string>
+    <string name="custom_timers">Custom Timers</string>
+    <string name="todo">TODO</string>
+    <string name="list_is_empty">List is empty</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="timerName">Name: %1$s</string>
+    <string name="name">Name: </string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="enterName">Enter Name</string>
+    <string name="timer_info">Timer Info</string>
+    <string name="edit_timer">Edit Timer</string>
+    <string name="item_name">Item Name</string>
+    <string name="name_format">Name: %s</string>
+    <string name="warm_up_format">Warm-Up: %d minutes</string>
+    <string name="work_interval_format">Work Interval: %d seconds</string>
+    <string name="rest_interval_format">Rest Interval: %d seconds</string>
+    <string name="rounds_format">Rounds: %d</string>
+    <string name="cool_down_format">Cool Down: %d minutes</string>
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+    <string name="rounds">Rounds:</string>
+    <string name="cool_down">Cool Down:</string>
+    <string name="rest_interval">Rest Interval:</string>
+    <string name="work_interval">Work Interval:</string>
+    <string name="warm_up">Warm-up:</string>
+    <string name="create_new_timer">Create new timer</string>
+    <string name="timers">Timers</string>
+    <string name="workouts">Workouts</string>
+    <string name="settings">Settings</string>
 </resources>

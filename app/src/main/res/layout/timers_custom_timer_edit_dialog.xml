@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/timers_button_closeDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="10dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_delete"
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/timers_button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="10dp"
+            android:layout_gravity="end"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="@string/todo" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/editTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_timer"
+        android:padding="15dp"
+        android:textSize="25sp"
+        android:layout_gravity="center" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/timerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="20sp"
+            android:layout_gravity="start|center"/>
+
+        <EditText
+            android:id="@+id/editTimerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/timerName"
+            android:maxLength="15"
+            android:autofillHints="no"
+            android:inputType="text"
+            android:singleLine="true"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/warm_up" />
+
+        <Spinner
+            android:id="@+id/spinnerWarmUp"
+            android:layout_width="70dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minutes"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/work_interval" />
+
+        <Spinner
+            android:id="@+id/spinnerWorkInterval"
+            android:layout_width="70dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seconds"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/rest_interval" />
+
+        <Spinner
+            android:id="@+id/spinnerRestInterval"
+            android:layout_width="70dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seconds"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/cool_down" />
+
+        <Spinner
+            android:id="@+id/spinnerCoolDown"
+            android:layout_width="70dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minutes"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/rounds" />
+
+        <Spinner
+            android:id="@+id/spinnerRounds"
+            android:layout_width="70dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+<!--    Buttons-->
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_gravity="center"/>
+</LinearLayout>

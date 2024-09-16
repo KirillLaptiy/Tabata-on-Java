@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp" >
+
+    <!-- Текст элемента -->
+    <TextView
+        android:id="@+id/itemText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/item_name"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:id="@+id/timers_button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="end"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_edit"
+        android:contentDescription="@string/todo" />
+
+    <!-- Кнопка удаления -->
+    <ImageButton
+        android:id="@+id/timers_button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_margin="10dp"
+        android:layout_gravity="end"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_delete"
+        android:contentDescription="@string/todo" />
+</LinearLayout>
