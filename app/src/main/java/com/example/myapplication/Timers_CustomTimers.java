@@ -221,6 +221,8 @@ public class Timers_CustomTimers extends Decoration_BaseFragment {
         });
 
         deleteTimer.setOnClickListener(view2 -> {
+            // Check item != null
+
             if (position >= itemList.size()) {
                 EditDialog.dismiss();
                 return;
@@ -236,6 +238,13 @@ public class Timers_CustomTimers extends Decoration_BaseFragment {
         });
 
         saveChanges.setOnClickListener(view2 -> {
+            // Check item != null
+
+            if (position >= itemList.size()) {
+                EditDialog.dismiss();
+                return;
+            }
+
             String newName = editTimerName.getText().toString();
 
             // Получаем новые значения из Spinner'ов
@@ -289,9 +298,6 @@ public class Timers_CustomTimers extends Decoration_BaseFragment {
 
             final ImageButton closeDialog = dialogView.findViewById(R.id.timers_button_closeDialog);
             final ImageButton delete = dialogView.findViewById(R.id.timers_button_delete);
-
-
-
 
             final Button edit = dialogView.findViewById(R.id.buttonEdit);
 

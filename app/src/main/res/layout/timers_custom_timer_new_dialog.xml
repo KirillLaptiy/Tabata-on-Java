@@ -31,7 +31,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="@string/enterName"
-            android:layout_marginStart="-20dp"
             android:maxLength="15"
             android:autofillHints="no"
             android:inputType="text"
