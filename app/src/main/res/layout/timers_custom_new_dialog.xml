@@ -12,13 +12,12 @@
         android:textSize="20sp"
         android:gravity="center"/>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp">
 
         <TextView
-            android:id="@+id/timerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name"
@@ -26,16 +25,18 @@
             android:layout_gravity="start|center"/>
 
         <EditText
-            android:id="@+id/editTextName"
+            android:id="@+id/timerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
             android:hint="@string/enterName"
             android:maxLength="15"
             android:autofillHints="no"
             android:inputType="text"
             android:singleLine="true"/>
-    </FrameLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,17 +49,40 @@
             android:textSize="20sp"
             android:text="@string/warm_up" />
 
-        <Spinner
-            android:id="@+id/spinnerWarmUp"
-            android:layout_width="70dp"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
+        <EditText
+            android:id="@+id/warmUpMinutes"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/minutes"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/warmUpSeconds"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/seconds"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -73,16 +97,39 @@
             android:textSize="20sp"
             android:text="@string/work_interval" />
 
-        <Spinner
-            android:id="@+id/spinnerWorkInterval"
-            android:layout_width="70dp"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
+        <EditText
+            android:id="@+id/workIntervalMinutes"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/minutes"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/workIntervalSeconds"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/seconds"
             android:textSize="20sp" />
     </LinearLayout>
@@ -98,16 +145,39 @@
             android:textSize="20sp"
             android:text="@string/rest_interval" />
 
-        <Spinner
-            android:id="@+id/spinnerRestInterval"
-            android:layout_width="70dp"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
+        <EditText
+            android:id="@+id/restIntervalMinutes"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/minutes"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/restIntervalSeconds"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/seconds"
             android:textSize="20sp" />
     </LinearLayout>
@@ -123,17 +193,40 @@
             android:textSize="20sp"
             android:text="@string/cool_down" />
 
-        <Spinner
-            android:id="@+id/spinnerCoolDown"
-            android:layout_width="70dp"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
+        <EditText
+            android:id="@+id/coolDownMinutes"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/minutes"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/coolDownSeconds"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/seconds"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -148,11 +241,15 @@
             android:textSize="20sp"
             android:text="@string/rounds" />
 
-        <Spinner
-            android:id="@+id/spinnerRounds"
-            android:layout_width="70dp"
-            android:paddingEnd="10dp"
-            android:paddingStart="10dp"
+        <EditText
+            android:id="@+id/rounds"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="2"
+            android:autofillHints="no"
+            android:inputType="number"
+            android:singleLine="true"
             android:layout_height="wrap_content" />
     </LinearLayout>
 

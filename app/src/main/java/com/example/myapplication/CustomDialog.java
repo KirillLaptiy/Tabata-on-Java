@@ -3,11 +3,11 @@ package com.example.myapplication;
 import android.app.AlertDialog;
 import android.view.View;
 
-public class Decoration_DialogResult {
+public class CustomDialog {
     private final View dialogView;
     private final AlertDialog dialog;
 
-    public Decoration_DialogResult(View dialogView, AlertDialog dialog) {
+    public CustomDialog(View dialogView, AlertDialog dialog) {
         this.dialogView = dialogView;
         this.dialog = dialog;
     }

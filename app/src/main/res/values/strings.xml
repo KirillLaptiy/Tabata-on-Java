@@ -22,8 +22,8 @@
     <string name="rest_interval_format">Rest Interval: %d seconds</string>
     <string name="rounds_format">Rounds: %d</string>
     <string name="cool_down_format">Cool Down: %d minutes</string>
-    <string name="minutes">minutes</string>
-    <string name="seconds">seconds</string>
+    <string name="minutes">m</string>
+    <string name="seconds">s</string>
     <string name="rounds">Rounds:</string>
     <string name="cool_down">Cool Down:</string>
     <string name="rest_interval">Rest Interval:</string>
@@ -33,4 +33,7 @@
     <string name="timers">Timers</string>
     <string name="workouts">Workouts</string>
     <string name="settings">Settings</string>
+    <string name="run">Run</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
 </resources>
