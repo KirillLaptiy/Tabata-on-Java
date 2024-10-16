@@ -9,8 +9,8 @@
     <string name="timerName">Name: %1$s</string>
     <string name="name">Name: </string>
     <string name="edit">Edit</string>
-    <string name="save">Save</string>
-    <string name="add">Add</string>
+    <string name="save">SAVE</string>
+    <string name="add">ADD</string>
     <string name="remove">Remove</string>
     <string name="enterName">Enter Name</string>
     <string name="timer_info">Timer Info</string>
@@ -24,7 +24,7 @@
     <string name="cool_down_format">Cool Down: %d minutes</string>
     <string name="minutes">m</string>
     <string name="seconds">s</string>
-    <string name="rounds">Rounds:</string>
+    <string name="rounds">Rounds</string>
     <string name="cool_down">Cool Down:</string>
     <string name="rest_interval">Rest Interval:</string>
     <string name="work_interval">Work Interval:</string>
@@ -36,4 +36,26 @@
     <string name="run">Run</string>
     <string name="pause">Pause</string>
     <string name="stop">Stop</string>
+    <string name="main">Main</string>
+    <string name="food">Food</string>
+    <string name="tabata">Tabata</string>
+    <string name="workout_programs">Workout\nPrograms</string>
+    <string name="tabata_name">Tabata Name</string>
+    <string name="tabata_settings">Tabata Settings</string>
+    <string name="tabata_preset_1">Tabata Preset #1</string>
+    <string name="interval">Interval</string>
+    <string name="mm">MM</string>
+    <string name="min">min</string>
+    <string name="ss">SS</string>
+    <string name="sec">sec</string>
+    <string name="rest_time">Rest Time</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="workout">WORKOUT</string>
+    <string name="round">Round</string>
+    <string name="_00_00">00:00</string>
+    <string name="_1_1">1 / 1</string>
+    <string name="_1">1 </string>
+    <string name="rest">REST</string>
+    <string name="delete">DELETE</string>
+    <string name="confirm_deletion">Confirm deletion?</string>
 </resources>

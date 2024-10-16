@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.main_fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.myapplication.CustomFragment;
+import com.example.myapplication.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.HashMap;
@@ -52,9 +54,9 @@ public class TemplateTimersFragment extends CustomFragment {
 
         createTimersSettings();
 
-        TimerObject beginnerTimer = new TimerObject(beginnerSettings);
-        TimerObject intermediateTimer = new TimerObject(intermediateSettings);
-        TimerObject advancedTimer = new TimerObject(advancedSettings);
+        TabataObject beginnerTimer = new TabataObject(beginnerSettings);
+        TabataObject intermediateTimer = new TabataObject(intermediateSettings);
+        TabataObject advancedTimer = new TabataObject(advancedSettings);
 
         LinearLayout beginnerButton = view.findViewById(R.id.beginnerButton);
         LinearLayout intermediateButton = view.findViewById(R.id.intermediateButton);
@@ -64,17 +66,17 @@ public class TemplateTimersFragment extends CustomFragment {
         setTimerSettings(intermediateButton, intermediateSettings);
         setTimerSettings(advancedButton, advancedSettings);
 
-        beginnerButton.setOnClickListener(v -> {
-            replaceFragment(new TimerRunFragment(beginnerTimer), R.id.main_fragments);
-        });
-
-        intermediateButton.setOnClickListener(v -> {
-            replaceFragment(new TimerRunFragment(intermediateTimer), R.id.main_fragments);
-        });
-
-        advancedButton.setOnClickListener(v -> {
-            replaceFragment(new TimerRunFragment(advancedTimer), R.id.main_fragments);
-        });
+//        beginnerButton.setOnClickListener(v -> {
+//            replaceFragment(new TabataRunFragment(beginnerTimer), R.id.main_fragments);
+//        });
+//
+//        intermediateButton.setOnClickListener(v -> {
+//            replaceFragment(new TabataRunFragment(intermediateTimer), R.id.main_fragments);
+//        });
+//
+//        advancedButton.setOnClickListener(v -> {
+//            replaceFragment(new TabataRunFragment(advancedTimer), R.id.main_fragments);
+//        });
     }
 
     private void createTimersSettings() {
