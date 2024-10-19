@@ -1,4 +1,4 @@
-package com.example.myapplication.main_fragment;
+package com.example.myapplication.home_fragment;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -80,13 +80,9 @@ public class TabataCustomAdapter extends ArrayAdapter<TabataObject> {
         // set Timer Buttons
 
         ImageButton tabataEdit = convertView.findViewById(R.id.tabataEdit);
-        ImageButton tabataStart = convertView.findViewById(R.id.tabataStart);
 
         tabataEdit.setFocusable(false);
         tabataEdit.setFocusableInTouchMode(false);
-
-        tabataStart.setFocusable(false);
-        tabataStart.setFocusableInTouchMode(false);
 
         // Edit Button Listener
 
@@ -96,16 +92,6 @@ public class TabataCustomAdapter extends ArrayAdapter<TabataObject> {
             }
 
             editTabata(tabataObject);
-        });
-
-        // Start Button Listener
-
-        tabataStart.setOnClickListener(view -> {
-            if (editDialogVisible || fragment.tabataDialog) {
-                return;
-            }
-
-            fragment.replaceFragment(new TabataRunFragment(tabataObject, this, position), R.id.main_fragments);
         });
 
         // Tabata Object Listener

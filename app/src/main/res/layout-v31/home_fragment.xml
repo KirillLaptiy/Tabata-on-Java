@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/home_tabata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/home_fragment_tabata"
+        android:clipToOutline="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:textSize="40sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/tabata"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="23dp"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="@null"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/home_workouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/home_fragment_workouts"
+        android:clipToOutline="true"
+        app:layout_constraintStart_toStartOf="@id/home_tabata"
+        app:layout_constraintTop_toBottomOf="@id/home_tabata">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:textSize="40sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/workout_programs"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="23dp"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="@null"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

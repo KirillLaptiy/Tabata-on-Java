@@ -1,7 +1,6 @@
-package com.example.myapplication.main_fragment;
+package com.example.myapplication.home_fragment;
 
 import android.content.Context;
-import android.graphics.BlurMaskFilter;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -253,7 +252,7 @@ public class ClockView extends View {
             currentStageRound.setText(spannable);
 
             MaterialButton runButton = getRootView().findViewById(R.id.tabataRun);
-            runButton.setIconResource(R.drawable.tabata_run);
+            runButton.setIconResource(R.drawable.ic_tabata_run);
         }
 
         greenAngle = 360;

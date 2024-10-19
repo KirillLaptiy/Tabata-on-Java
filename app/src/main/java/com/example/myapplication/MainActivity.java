@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.myapplication.main_fragment.MainFragment;
+import com.example.myapplication.home_fragment.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,18 +32,18 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(v -> this.getSupportFragmentManager().popBackStack());
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragments, new MainFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragments, new HomeFragment()).commit();
     }
 
      BottomNavigationView.OnItemSelectedListener navListener =
         item -> {
             Fragment selectedFragment = null;
 
-            if (item.getItemId() == R.id.nav_main) {
-                selectedFragment = new MainFragment();
-            } else if (item.getItemId() == R.id.nav_food) {
+            if (item.getItemId() == R.id.home_fragment) {
+                selectedFragment = new HomeFragment();
+            } else if (item.getItemId() == R.id.food_fragment) {
                 selectedFragment = new WorkoutsFragment();
-            } else if (item.getItemId() == R.id.nav_settings) {
+            } else if (item.getItemId() == R.id.settings_fragment) {
                 selectedFragment = new SettingsFragment();
             }
 

@@ -1,8 +1,7 @@
-package com.example.myapplication.main_fragment;
+package com.example.myapplication.home_fragment;
 
 import android.app.Dialog;
 import android.graphics.Color;
-import android.graphics.Outline;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -10,7 +9,6 @@ import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewOutlineProvider;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -103,20 +101,20 @@ public class TabataRunFragment extends CustomFragment {
                 isButtonsClickable = false;
 
                 tabataState = "Started";
-                runButton.setIconResource(R.drawable.tabata_paused);
+                runButton.setIconResource(R.drawable.ic_tabata_pause);
 
 
                 long workInterval = (tabataObject.getIntervalMinutes() * 60L + tabataObject.getIntervalSeconds()) * 1000L;
                 clockView.startTimer(workInterval, workInterval);
             } else if (tabataState.equals("Started")) {
                 tabataState = "Paused";
-                runButton.setIconResource(R.drawable.tabata_run);
+                runButton.setIconResource(R.drawable.ic_tabata_pause);
                 clockView.pauseTimer();
             } else if (tabataState.equals("Paused")) {
                 isButtonsClickable = false;
 
                 tabataState = "Started";
-                runButton.setIconResource(R.drawable.tabata_paused);
+                runButton.setIconResource(R.drawable.ic_tabata_pause);
                 clockView.resumeTimer();
             }
 

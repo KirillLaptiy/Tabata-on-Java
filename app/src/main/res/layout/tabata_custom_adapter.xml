@@ -7,12 +7,12 @@
 
     <ImageButton
         android:id="@+id/tabataEdit"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:scaleType="fitXY"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:layout_gravity="center"
-        android:src="@drawable/tabata_edit"
+        android:src="@drawable/ic_tabata_edit"
         android:contentDescription="@string/todo" />
 
     <LinearLayout
@@ -45,13 +45,12 @@
             android:textSize="12sp" />
     </LinearLayout>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/tabataStart"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:scaleType="fitXY"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:layout_gravity="center"
-        android:src="@drawable/tabata_start"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@null"
+        android:src="@drawable/ic_tabata_start" />
 </LinearLayout>

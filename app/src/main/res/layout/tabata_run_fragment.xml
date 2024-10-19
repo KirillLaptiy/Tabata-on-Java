@@ -9,11 +9,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
-        android:layout_marginTop="174dp"
+        android:layout_marginTop="110dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.example.myapplication.main_fragment.ClockView
+        <com.example.myapplication.home_fragment.ClockView
             android:id="@+id/clockView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -85,7 +85,7 @@
             android:gravity="center"
             android:background="@drawable/circular_button"
             app:backgroundTint="#1D7966"
-            app:icon="@drawable/tabata_delete"
+            app:icon="@drawable/ic_tabata_delete"
             app:iconTint="#1D7966"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
@@ -100,7 +100,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:backgroundTint="@null"
-            app:icon="@drawable/tabata_run"
+            app:icon="@drawable/ic_tabata_run"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:iconSize="24dp"/>
@@ -113,7 +113,7 @@
             android:gravity="center"
             android:background="@drawable/circular_button"
             app:backgroundTint="#1D7966"
-            app:icon="@drawable/tabata_restart"
+            app:icon="@drawable/ic_tabata_restart"
             app:iconTint="#1D7966"
             app:iconGravity="textStart"
             app:iconPadding="0dp"

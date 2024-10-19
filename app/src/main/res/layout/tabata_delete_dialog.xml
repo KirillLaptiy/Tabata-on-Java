@@ -7,7 +7,7 @@
     android:padding="24dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,7 +32,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonCancel"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="47dp"
                 android:text="@string/cancel"
                 android:textColor="#1D7966"
@@ -45,7 +45,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonDelete"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="47dp"
                 android:text="@string/delete"
                 android:textColor="#FFFFFF"

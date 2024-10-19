@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar">
@@ -15,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="#F7FAF8"
-            app:navigationIcon="@drawable/arrow_back"
+            app:navigationIcon="@drawable/ic_arrow_back"
             app:titleTextAppearance="@style/ToolbarTitleText"/>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -23,6 +24,7 @@
         android:id="@+id/main_fragments"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
         android:layout_above="@id/bottom_navigation"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -33,5 +35,5 @@
         android:paddingStart="80.5dp"
         android:paddingEnd="80.5dp"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/nav_chapters"/>
+        app:menu="@menu/bottom_navigation_menu"/>
 </RelativeLayout>

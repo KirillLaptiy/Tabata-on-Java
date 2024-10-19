@@ -1,11 +1,9 @@
-package com.example.myapplication.main_fragment;
+package com.example.myapplication.home_fragment;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.InputFilter;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -82,6 +80,20 @@ public class TabataFragment extends CustomFragment {
         // get Views
 
         EditText[] tabataSettings = getTabataSettings(dialogView);
+
+        for (EditText valueField : tabataSettings) {
+            int fieldType = valueField.getInputType();
+
+            String fieldId = getResources().getResourceEntryName(valueField.getId());
+
+            if (fieldType == 1) {
+                valueField.setText("Tabata #1");
+            } else if (Objects.equals(fieldId, "rounds") || Objects.equals(fieldId, "restSeconds") || Objects.equals(fieldId, "intervalSeconds")) {
+                valueField.setText("1");
+            } else {
+                valueField.setText("0");
+            }
+        }
 
         MaterialButton buttonCancel = dialogView.findViewById(R.id.buttonCancel);
         MaterialButton buttonAdd = dialogView.findViewById(R.id.buttonAdd);
