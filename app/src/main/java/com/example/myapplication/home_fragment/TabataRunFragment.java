@@ -108,7 +108,7 @@ public class TabataRunFragment extends CustomFragment {
                 clockView.startTimer(workInterval, workInterval);
             } else if (tabataState.equals("Started")) {
                 tabataState = "Paused";
-                runButton.setIconResource(R.drawable.ic_tabata_pause);
+                runButton.setIconResource(R.drawable.ic_tabata_run);
                 clockView.pauseTimer();
             } else if (tabataState.equals("Paused")) {
                 isButtonsClickable = false;
